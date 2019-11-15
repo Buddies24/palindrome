@@ -13,6 +13,8 @@ namespace palindrome
         {
             Console.Write("Enter word to check : ");
             var wordToCheck=Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(wordToCheck))
+                throw new ArgumentNullException("The word must not be null.");
 
         }
     }
