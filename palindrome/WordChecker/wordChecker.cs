@@ -8,7 +8,7 @@ namespace palindrome.WordChecker
 {
     public static class wordChecker
     {
-        public static bool checkWord(string word)
+        public static bool IsPalindrome(string word)
         {
             return word.SequenceEqual(word.Reverse());
         }

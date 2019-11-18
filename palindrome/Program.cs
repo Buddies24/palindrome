@@ -15,9 +15,9 @@ namespace palindrome
             var wordToCheck=Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(wordToCheck))
-                throw new ArgumentNullException("The word must not be null.");
+                throw new ArgumentNullException("The word is required.");
 
-            Console.WriteLine("Reversed word equals {0} : {1}",wordToCheck,wordChecker.checkWord(wordToCheck));
+            Console.WriteLine("{0} Is palindrome : {1}",wordToCheck,wordChecker.IsPalindrome(wordToCheck));
             Console.ReadKey();
 
         }
